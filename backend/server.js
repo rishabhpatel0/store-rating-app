@@ -89,7 +89,7 @@ app.post("/login",async(req,res)=>{
 			id:user.id,
 			username:user.username,
 			role:user.role
-		},"secret123"
+		},"secret123",
 		{expiresIn:"1h"}
 		)
 		res.json({token})
